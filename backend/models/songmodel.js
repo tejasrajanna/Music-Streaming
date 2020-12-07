@@ -8,8 +8,11 @@ const SongSchema = new mongoose.Schema({
   artist: {
     type: String,
     required: true
+  },
+  url: {
+    type:String,
+    required:true
   }
-
 });
 
 const song = mongoose.model('Song', SongSchema,"song");
