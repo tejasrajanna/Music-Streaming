@@ -51,8 +51,8 @@ function App() {
             <Route exact path="/login" component={Login} />
             <Switch>
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
+            <PrivateRoute exact path="/dashboard/lib" component={List} />
             </Switch>
-           <Route path="/dashboard/lib" exact component={List} />
            <Route path="/dashboard/lib/:id" component={Play} />
     </div>
     </Router>
