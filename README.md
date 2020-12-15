@@ -47,7 +47,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Development
 Run these commands to test the project
 cd backend
-nodemon server  //Connects to MongoDB and starts server
+nodemon server  
+Using above commands, connect to MongoDB and start server
 Open new terminal and run
-npm start   //Frontend
+npm start   
 This should open up specified localhost in the browser
