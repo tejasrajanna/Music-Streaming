@@ -11,7 +11,6 @@ const User = require('../models/usermodel');
 const validateRegisterInput = require("../validation/register");
 const validateLoginInput = require("../validation/login");
 
-// @route POST api/users/register
 // @desc Register user
 // @access Public
 router.route("/register").post((req, res) => {
@@ -39,9 +38,8 @@ router.route("/register").post((req, res) => {
         if(err) throw err;
         bcrypt.hash(newUser.password, salt, (err, hash) => {
           if (err) throw err;
-          newUser.password = hash;
-          newUser
-            .save()
+          newUser.password = hash; //Set password to hashed
+          newUser.save()  //Save user
             .then(user => {res.json(user); console.log(user);})
             .catch(err => console.log(err));
         });
@@ -50,7 +48,6 @@ router.route("/register").post((req, res) => {
   });
 });
 
-// @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
 router.route("/login").post((req, res) => {

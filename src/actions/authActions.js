@@ -52,9 +52,9 @@ export const setCurrentUser = decoded => {
 
 // User loading
 export const setUserLoading = () => {
-  return {
-    type: USER_LOADING
-  };
+ return {
+   type: USER_LOADING
+ };
 };
 
 // Log user out

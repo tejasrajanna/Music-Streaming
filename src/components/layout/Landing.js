@@ -5,9 +5,9 @@ class Landing extends Component {
   render() {
     return (
       
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="col s12 center-align">
+      <div style={{ marginTop: "4rem" }} class="center-align">
+        <div className="row" >
+          <div className="col s12">
             <h4>
               <b>Welcome </b>
             </h4>
@@ -23,22 +23,23 @@ class Landing extends Component {
                   borderRadius: "3px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                className="btn-floating btn-large waves-effect waves-light hoverable blue accent-3 lime-text text-lighten-2" 
               >
-                Register
+                <b>Register</b>
               </Link>
             </div>
             <div className="col s6">
-              <Link
+              <Link 
                 to="/login"
                 style={{
                   width: "140px",
                   borderRadius: "3px",
                   letterSpacing: "1.5px"
                 }}
-                className="btn btn-large btn-flat waves-effect white black-text"
+                className="btn-floating btn-large waves-effect waves-light 
+                hoverable green accent-3 yellow-text text-accent-1" 
               >
-                Log In
+                <b>Log In</b>
               </Link>
             </div>
           </div>

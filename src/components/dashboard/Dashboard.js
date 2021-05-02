@@ -13,10 +13,10 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
 
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div style={{ marginTop: "6rem"}} className="center-align">
         <div className="row">
-          <div className="landing-copy col s12 center-align">
-            <h4>
+          <div className="landing-copy col s12 ">
+            <h4 class="red-text text-darken-2">
               <b>Hey there,</b> {user.name.split(" ")[0]}
             </h4>
             <button
@@ -29,7 +29,7 @@ class Dashboard extends Component {
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
-              Logout
+              <b>Logout</b>
             </button>
           </div>
         </div>

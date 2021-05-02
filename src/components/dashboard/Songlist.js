@@ -30,7 +30,7 @@ export default class songlist extends Component {
 
     render() {
         return this.state.songs.map((currentsong) => (
-            <Songitem key={currentsong._id} song={currentsong} />
+            <Songitem key={currentsong._id} song={currentsong} /> //key should be unique for map function
           ));
         }
     }
