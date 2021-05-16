@@ -3,7 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const passport = require('passport');
 
-const uri = require('./config/keys').mongoURI;
+const uri = require('./config/keys.env').mongoURI;
 
 const app = express();
 const port = process.env.PORT || 5000;
